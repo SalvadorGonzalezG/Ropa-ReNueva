@@ -1,213 +1,322 @@
-<div class="background--container">
-    <!-- <div class="nosotres--container"> -->
-        <!-- <div class="card-body"> -->
-            <h1 class="card-nosotres">Sobre Nosotres</h1>
-            <!-- <img src="/ReNuevaTe/public/imagenes/headersobrenosotres.png"> -->
-        <!-- </div> -->
-    <!-- </div> -->
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/sobreNosotrxs.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../../public/imagenes/LogoRopaReNuevaFooter.png" style="border-radius: 50px;">
+</head>
 
-
-
-<!-- PARTE CESAR-->
-<div class="mv--container">
-    <div class="card--mv">
-        <div class="card-body1">
-            <h2 class="card-title">Misión</h2>
-            <p class="card-text">Reducir el impacto ambiental del sector de la moda ofreciendo una alternativa
-                económica y sostenible mediante la venta de ropa de segunda mano, fomentando un consumo más
-                responsable y consciente.</p>
-        </div>
-    </div>
-    
-    <div class="card--mv">
-        <div class="card-body1">
-            <h2 class="card-title">Visión</h2>
-            <p class="card-text">Convertirnos en la plataforma líder en moda sostenible, promoviendo un cambio
-                significativo en la industria y en los hábitos de consumo de la sociedad mexicana, contribuyendo a
-                un planeta más limpio y un futuro más sostenible.</p>
-        </div>
-    </div>
-</div>
-
-<!-- PARTE CESAR-->
-
-
-
-
-<!-- PARTE ARTURO-->
-
-<div class="valores--container">
-    <h1 style="text-align: center;" style="margin: 40px,;">Valores</h1>
-    <div class="primeros--valores">
-        <div class="card">
-            <div class="card-border-top">
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="" class="log" id="el-logo">
+                <img height="65" width="65" src="../../public/imagenes/Logo-sin-fondo.png" alt="Logo"> </a>
+            <div class="search-container">
+                <img src="../../public/imagenes/lupa.svg" alt="Icono de búsqueda" class="search-icon">
+                <input type="search" placeholder="Encuentra tu estilo o descubre tu esencia" id="Buscador" />
             </div>
-            <div class="circulo">
-            </div>
-            <span>Sostenibilidad</span>
-            <p class="job">Comprometidas y comprometidos con la reducción del impacto ambiental y la promoción de
-                prácticas responsables.</p>
-        </div>
-        <div class="card">
-            <div class="card-border-top">
-            </div>
-            <div class="circulo">
-            </div>
-            <span>Accesibilidad</span>
-            <p class="job" id="accesibilidad">Ofrecer moda de calidad a precios económicos para todas y todos.</p>
-        </div>
-        <div class="card">
-            <div class="card-border-top">
-            </div>
-            <div class="circulo">
-            </div>
-            <span>Conciencia Social</span>
-            <p class="job" id="conciencia">Fomentar la educación y la sensibilización sobre los efectos negativos del fast fashion.
-            </p>
-        </div>
-    </div>
-    <div class="segundos--valores">
-        <div class="card">
-            <div class="card-border-top">
-            </div>
-            <div class="circulo">
-            </div>
-            <span>Inclusión Social</span>
-            <p class="job">Ofreciendo ropa sin categorización de género y
-                asegurando que la plataforma sea accesible para personas con discapacidades visuales</p>
-        </div>
-
-        <div class="card">
-            <div class="card-border-top">
-            </div>
-            <div class="circulo">
-            </div>
-            <span>Innovación</span>
-            <p class="job">Buscar constantemente nuevas formas de mejorar y expandir nuestra plataforma para servir
-                mejor a nuestra comunidad.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-border-top">
-            </div>
-            <div class="circulo">
-            </div>
-            <span>Transparencia</span>
-            <p class="job" id="transparencia">Mantener una comunicación abierta y honesta con nuestros clientes y colaboradores.</p>
-        </div>
-    </div>
-</div>
-
-<!-- PARTE ARTURO-->
-
-
-<!-- PARTE DANI -->
-<br>
-<div>
-    <div class="equipo--container">
-        <h1> ¡Conoce al equipo! </h1>
-        <!-- <div class="equipo2"></div> -->
-
-        <div class="container">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div>
-                            <p class="title">Daniela Luna</p>
+            <button class="open-menu" aria-label="Cerrar Ménu"><img src="../../public/imagenes/hamburger-icon.svg"
+                    alt="cerrar menu"></button>
+            <ul class="menu">
+                <button class="close-menu"><img src="../../public/imagenes/close-icon.svg" alt=""></button>
+                <li>
+                    <div class="search-container" id="buscador2">
+                        <img src="../../public/imagenes/lupa.svg" alt="Icono de búsqueda" class="search-icon">
+                        <input type="search" placeholder="   Encuentra tu estilo" id="Buscador" />
+                    </div>
+                </li>
+                <li class="li-nav"><a href="./inicio.html">Inicio</a></li>
+                <li class="li-nav"><a href="./sobreNosotrxs.html">Sobre Nosotres</a></li>
+                <li class="li-nav"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="li-nav"><a href="./inicioDeSesion.html">Iniciar Sesión</a></li>
+                <li class="li-nav shopping-cart" id="carrito">
+                    <img class="bag" width="30px" height="30px" src="../../public/imagenes/bolsa.svg" alt="">
+                    <div class="buy-card">
+                        <ul class="container-cart-products">
+                            <li class="l1">Producto</li>
+                            <li class="l1">Nombre</li>
+                            <li class="l1">Precio</li>
+                            <li class="l1">Cantidad</li>
+                            <li class="l1"></li>
+                        </ul>
+                        <div class="lista_de_cursos">
                         </div>
-                        <img src="/ReNuevaTe/public/imagenes/dani.png">
+                        <button id="vaciar_carrito" class="clean-btn">Vaciar Carrito</button>
+                        <button class="clean-btn"><a href="/paymenDetails">
+                                Comprar ahora</a>
+                        </button>
                     </div>
-                    <div class="flip-card-back">
-                        <p>Soy una persona inmersa en el desarrollo web, el análisis de datos, y la inclusión
-                            social. Actualmente, estoy indagando en temas de tecnología,
-                            mientras aprendo lenguajes clave como Java, R y Python</p>
-                    </div>
+                </li>
+            </ul>
+    </header>
+
+
+
+    <div class="background--container">
+        <!-- <div class="nosotres--container"> -->
+        <!-- <div class="card-body"> -->
+        <h1 class="card-nosotres">Sobre Nosotres</h1>
+        <!-- <img src="/ReNuevaTe/public/imagenes/headersobrenosotres.png"> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+
+
+
+
+    <!-- PARTE CESAR-->
+    <div class="mv--container">
+        <div class="card--mv">
+            <div class="card-body1">
+                <h2 class="card-title">Misión</h2>
+                <p class="card-text">Reducir el impacto ambiental del sector de la moda ofreciendo una alternativa
+                    económica y sostenible mediante la venta de ropa de segunda mano, fomentando un consumo más
+                    responsable y consciente.</p>
+            </div>
+        </div>
+
+        <div class="card--mv">
+            <div class="card-body1">
+                <h2 class="card-title">Visión</h2>
+                <p class="card-text">Convertirnos en la plataforma líder en moda sostenible, promoviendo un cambio
+                    significativo en la industria y en los hábitos de consumo de la sociedad mexicana, contribuyendo a
+                    un planeta más limpio y un futuro más sostenible.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTE CESAR-->
+
+
+
+
+    <!-- PARTE ARTURO-->
+
+    <div class="valores--container">
+        <h1 style="text-align: center;" style="margin: 40px,;">Valores</h1>
+        <div class="primeros--valores">
+            <div class="card">
+                <div class="card-border-top">
                 </div>
+                <div class="circulo">
+                </div>
+                <span>Sostenibilidad</span>
+                <p class="job">Comprometidas y comprometidos con la reducción del impacto ambiental y la promoción de
+                    prácticas responsables.</p>
+            </div>
+            <div class="card">
+                <div class="card-border-top">
+                </div>
+                <div class="circulo">
+                </div>
+                <span>Accesibilidad</span>
+                <p class="job" id="accesibilidad">Ofrecer moda de calidad a precios económicos para todas y todos.</p>
+            </div>
+            <div class="card">
+                <div class="card-border-top">
+                </div>
+                <div class="circulo">
+                </div>
+                <span>Conciencia Social</span>
+                <p class="job" id="conciencia">Fomentar la educación y la sensibilización sobre los efectos negativos
+                    del fast fashion.
+                </p>
+            </div>
+        </div>
+        <div class="segundos--valores">
+            <div class="card">
+                <div class="card-border-top">
+                </div>
+                <div class="circulo">
+                </div>
+                <span>Inclusión Social</span>
+                <p class="job">Ofreciendo ropa sin categorización de género y
+                    asegurando que la plataforma sea accesible para personas con discapacidades visuales</p>
             </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">Arturo Ramírez</p>
-                        <img src="/ReNuevaTe/public/imagenes/arturo.png" id="arturo">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Soy un Desarrollador Java Full Stack con un gran entusiasmo y gusto por el desarrollo y
-                            la mejora continua, buscando siempre superarme en todo aspecto</p>
-                    </div>
+            <div class="card">
+                <div class="card-border-top">
                 </div>
+                <div class="circulo">
+                </div>
+                <span>Innovación</span>
+                <p class="job">Buscar constantemente nuevas formas de mejorar y expandir nuestra plataforma para servir
+                    mejor a nuestra comunidad.</p>
             </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">César Díaz</p>
-                        <img src="/ReNuevaTe/public/imagenes/cesar.png">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Desarrollador Java Full Stack, encargado del front end de páginas de la e-commerce
-                            RopaRenueva.
-                        </p>
-                    </div>
+            <div class="card">
+                <div class="card-border-top">
                 </div>
+                <div class="circulo">
+                </div>
+                <span>Transparencia</span>
+                <p class="job" id="transparencia">Mantener una comunicación abierta y honesta con nuestros clientes y
+                    colaboradores.</p>
             </div>
+        </div>
+    </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">Salvador González</p>
-                        <img src="/ReNuevaTe/public/imagenes/salvador.png">
-                    </div>
-                    <div class="flip-card-back">
-                        <p> Soy Desarrollador Full Stack Jr, apasionado y gran entusiasta por el desarrollo web y la
-                            tecnología. En este proyecto me he encargado de realizar el maquetado de la parte visual
-                            y funcional de la página. </p>
-                    </div>
-                </div>
-            </div>
+    <!-- PARTE ARTURO-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">Johana Cuevas</p>
-                        <img src="/ReNuevaTe/public/imagenes/johana.png">
-                    </div>
-                    <div class="flip-card-back">
-                        <p> Soy una profesional apasionada por la tecnología. En este
-                            proyecto soy parte del equipo de desarrollo y he contribuído al diseño e implementación del área del
-                            Frontend. </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">Dilan Sadrak</p>
-                        <img src="/ReNuevaTe/public/imagenes/dilan.png">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Soy Desarrollador Full Stack Jr. con una profunda pasión por la programación. He
-                            adquirido experiencia en el desarrollo del backend, frontend y en la gestión de
-                            bases de datos.</p>
+    <!-- PARTE DANI -->
+    <br>
+    <div>
+        <div class="equipo--container">
+            <h1> ¡Conoce al equipo! </h1>
+            <!-- <div class="equipo2"></div> -->
+
+            <div class="container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <p class="title">Daniela Luna</p>
+                            </div>
+                            <img src="../../public/imagenes/dani.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Soy una persona inmersa en el desarrollo web, el análisis de datos, y la inclusión
+                                social. Actualmente, estoy indagando en temas de tecnología,
+                                mientras aprendo lenguajes clave como Java, R y Python</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <p class="title">Juan Hernández</p>
-                        <img src="/ReNuevaTe/public/imagenes/juan.png">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Arturo Ramírez</p>
+                            <img src="../../public/imagenes/arturo.png" id="arturo">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Soy un Desarrollador Java Full Stack con un gran entusiasmo y gusto por el desarrollo y
+                                la mejora continua, buscando siempre superarme en todo aspecto</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
-                        <p>Soy un Desarrollador web apasionado por la sostenibilidad y el impacto positivo en el
-                            medio ambiente. Mi objetivo es proporcionar una plataforma amigable y funcional.
-                        </p>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">César Díaz</p>
+                            <img src="../../public/imagenes/cesar.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Desarrollador Java Full Stack, encargado del front end de páginas de la e-commerce
+                                RopaRenueva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Salvador González</p>
+                            <img src="../../public/imagenes/salvador.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p> Soy Desarrollador Full Stack Jr, apasionado y gran entusiasta por el desarrollo web y la
+                                tecnología. En este proyecto me he encargado de realizar el maquetado de la parte visual
+                                y funcional de la página. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Johana Cuevas</p>
+                            <img src="../../public/imagenes/johana.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p> Soy una profesional apasionada por la tecnología. En este
+                                proyecto soy parte del equipo de desarrollo y he contribuído al diseño e implementación
+                                del área del
+                                Frontend. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Dilan Sadrak</p>
+                            <img src="../../public/imagenes/dilan.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Soy Desarrollador Full Stack Jr. con una profunda pasión por la programación. He
+                                adquirido experiencia en el desarrollo del backend, frontend y en la gestión de
+                                bases de datos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">Juan Hernández</p>
+                            <img src="../../public/imagenes/juan.png">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Soy un Desarrollador web apasionado por la sostenibilidad y el impacto positivo en el
+                                medio ambiente. Mi objetivo es proporcionar una plataforma amigable y funcional.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <footer class="contenedorFooter">
+        <div class="contenedorPieDePagina">
+            <img id="logoPieDePagina" src="../../public/imagenes/LogoRopaReNuevaFooter.png" alt="Logo de Ropa ReNueva">
+            <div class="contenedorComentariosContactanosBoton">
+                <div style="border-radius: 8px;" class="contenedorComentariosContactanos">
+                    <div class="contactanosFooter">
+                        <img src="../../public/imagenes/envelope (1).svg" alt="Logo de carta"
+                            style="padding-right: 5px">
+                        <h3 style="font-size: 18px" style="padding-left: 12px ; margin-top: 10%;">
+                            <a href="./contactanos.html" rel=".">
+                                Contáctanos
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="comentariosFooter">
+                        <img src="../../public/imagenes/chat-fill.svg" alt="Logo de globo de texto"
+                            style="padding-right: 5px">
+                        <h3 style="font-size: 18px" style="padding-left: 12px; padding-top: 5px;">
+                            <a href="./comentarios.html" rel=".">
+                                Comentarios
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="enlacesPieDePagina">
+                <div class="contenedorEnlaces">
+                    <h3><a href="./sobreNosotrxs.html" id="enlacesFooter">Sobre Nosotres</a></h3>
+                    <h3><a href="./catalogo.html" id="enlacesFooter">Catálogo</a></h3>
+                    <h3><a href="./inicio.html" id="enlacesFooter">Inicio</a></h3>
+                </div>
+                <div class="contenedorEnlaces">
+                    <h3><a href="./inicioDeSesion.html" id="enlacesFooter">Iniciar Sesión</a></h3>
+                    <h3><a href="./carrito.html" id="enlacesFooter">Mi carrito</a></h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,55 +1,169 @@
-<section class="bdy">
-    <div class="container" id="container">
-        <!-- Formulario para crear cuenta -->
-        <div class="formulario form-container1 sign-up-container" id>
-            <form id="formulario" class="formulario" action="POST">
-              <div class="title"><h3 class="titulo-seccion">Crear Cuenta</h3></div>
+<!DOCTYPE html>
+<html lang="en">
 
-                <input id="nombre" class="entrada my-1" name="nombre" type="text" onkeypress="return check(event)" placeholder="Nombre Apellido" required/>
-                <input id="correo" class="entrada my-1" name="correo" type="email" placeholder="Correo" required/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/inicioDeSesion.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../../public/imagenes/LogoRopaReNuevaFooter.png" style="border-radius: 50px;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
 
-                <input id="tel" class="entrada my-1" name="numero" type="tel" placeholder="Número" required/>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="" class="log" id="el-logo">
+                <img height="65" width="65" src="../../public/imagenes/Logo-sin-fondo.png" alt="Logo"> </a>
+            <div class="search-container">
+                <img src="../../public/imagenes/lupa.svg" alt="Icono de búsqueda" class="search-icon">
+                <input type="search" placeholder="Encuentra tu estilo o descubre tu esencia" id="Buscador" />
+            </div>
+            <button class="open-menu" aria-label="Cerrar Ménu"><img src="../../public/imagenes/hamburger-icon.svg"
+                    alt="cerrar menu"></button>
+            <ul class="menu">
+                <button class="close-menu"><img src="../../public/imagenes/close-icon.svg" alt=""></button>
+                <li>
+                    <div class="search-container" id="buscador2">
+                        <img src="../../public/imagenes/lupa.svg" alt="Icono de búsqueda" class="search-icon">
+                        <input type="search" placeholder="   Encuentra tu estilo" id="Buscador" />
+                    </div>
+                </li>
+                <li class="li-nav"><a href="./inicio.html">Inicio</a></li>
+                <li class="li-nav"><a href="./sobreNosotrxs.html">Sobre Nosotres</a></li>
+                <li class="li-nav"><a href="./catalogo.html">Catálogo</a></li>
+                <li class="li-nav"><a href="./inicioDeSesion.html">Iniciar Sesión</a></li>
+                <li class="li-nav shopping-cart" id="carrito">
+                    <img class="bag" width="30px" height="30px" src="../../public/imagenes/bolsa.svg" alt="">
+                    <div class="buy-card">
+                        <ul class="container-cart-products">
+                            <li class="l1">Producto</li>
+                            <li class="l1">Nombre</li>
+                            <li class="l1">Precio</li>
+                            <li class="l1">Cantidad</li>
+                            <li class="l1"></li>
+                        </ul>
+                        <div class="lista_de_cursos">
+                        </div>
+                        <button id="vaciar_carrito" class="clean-btn">Vaciar Carrito</button>
+                        <button class="clean-btn"><a href="/paymenDetails">
+                                Comprar ahora</a>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+    </header>
 
-                <input id="contraseña" class="entrada my-1" name="contraseña" type="password" placeholder="Contraseña" required/>
 
-                <input id="contraseña2" class="entrada my-1" name="contraseña2" type="password" placeholder="Confirma contraseña" required/>
+    <section class="bdy">
+        <div class="container" id="container">
+            <!-- Formulario para crear cuenta -->
+            <div class="formulario form-container1 sign-up-container" id>
+                <form id="formulario" class="formulario" action="POST">
+                    <div class="title">
+                        <h3 class="titulo-seccion">Crear Cuenta</h3>
+                    </div>
 
-                <!-- Boton -->
-                <button type="submit" class="boton">Crear</button>
-                <p class="warnings" id="warnings"></p>
-            </form>
-        </div>
-        <!-- Formulario para iniciar sesión -->
-        <div class="formulario2 form-container2 sign-in-container">
-            <form id="formulario2" class="formulario2" action="GET">
-                <h3 class="titulo-seccion">Inicia Sesión</h3>
+                    <input id="nombre" class="entrada my-1" name="nombre" type="text" onkeypress="return check(event)"
+                        placeholder="Nombre Apellido" required />
+                    <input id="correo" class="entrada my-1" name="correo" type="email" placeholder="Correo" required />
 
-                <input id="username" class="entrada my-2" name="user" type="user" placeholder="Correo" required/>
+                    <input id="tel" class="entrada my-1" name="numero" type="tel" placeholder="Número" required />
 
-                <input id="password" class="entrada my-2" name="password" type="password" placeholder="Contraseña" required/>
+                    <input id="contraseña" class="entrada my-1" name="contraseña" type="password"
+                        placeholder="Contraseña" required />
 
-                <a class="texto-general-link" href="#">¿Olvidaste tu contraseña?</a>
-                <button type="submit" class="boton">Ingresar</button>
-                <p class="error" id="error"></p>
-            </form>
-        </div>
-        
-        <!-- Overlay -->
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h3 class="titulo-seccion-2">Bienvenidx!</h3>
-                    <p class="texto-general-2">Únete a nuestra comunidad para recibir promociones.</p>
-                    <button type="button" class="boton-ghost" id="signIn">Inicia Sesión</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h3 class="titulo-seccion-2">¡Únete!</h3>
-                    <p class="texto-general-2">¿No tienes una cuenta? Accede aquí para registrarte.</p>
-                    <button type="button" class="boton-ghost" id="signUp">Unirse</button>
+                    <input id="contraseña2" class="entrada my-1" name="contraseña2" type="password"
+                        placeholder="Confirma contraseña" required />
+
+                    <!-- Boton -->
+                    <button type="submit" class="boton">Crear</button>
+                    <p class="warnings" id="warnings"></p>
+                </form>
+            </div>
+            <!-- Formulario para iniciar sesión -->
+            <div class="formulario2 form-container2 sign-in-container">
+                <form id="formulario2" class="formulario2" action="GET">
+                    <h3 class="titulo-seccion">Inicia Sesión</h3>
+
+                    <input id="username" class="entrada my-2" name="user" type="user" placeholder="Correo" required />
+
+                    <input id="password" class="entrada my-2" name="password" type="password" placeholder="Contraseña"
+                        required />
+
+                    <a class="texto-general-link" href="#">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="boton">Ingresar</button>
+                    <p class="error" id="error"></p>
+                </form>
+            </div>
+
+            <!-- Overlay -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h3 class="titulo-seccion-2">Bienvenidx!</h3>
+                        <p class="texto-general-2">Únete a nuestra comunidad para recibir promociones.</p>
+                        <button type="button" class="boton-ghost" id="signIn">Inicia Sesión</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h3 class="titulo-seccion-2">¡Únete!</h3>
+                        <p class="texto-general-2">¿No tienes una cuenta? Accede aquí para registrarte.</p>
+                        <button type="button" class="boton-ghost" id="signUp">Unirse</button>
+                    </div>
                 </div>
             </div>
-      </div>
-  </div>
-</div>
-</div>
-</section>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="contenedorFooter">
+        <div class="contenedorPieDePagina">
+            <img id="logoPieDePagina" src="../../public/imagenes/LogoRopaReNuevaFooter.png" alt="Logo de Ropa ReNueva">
+            <div class="contenedorComentariosContactanosBoton">
+                <div style="border-radius: 8px;" class="contenedorComentariosContactanos">
+                    <div class="contactanosFooter">
+                        <img src="../../public/imagenes/envelope (1).svg" alt="Logo de carta"
+                            style="padding-right: 5px">
+                        <h3 style="font-size: 18px" style="padding-left: 12px ; margin-top: 10%;">
+                            <a href="./contactanos.html" rel=".">
+                                Contáctanos
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="comentariosFooter">
+                        <img src="../../public/imagenes/chat-fill.svg" alt="Logo de globo de texto"
+                            style="padding-right: 5px">
+                        <h3 style="font-size: 18px" style="padding-left: 12px; padding-top: 5px;">
+                            <a href="./comentarios.html" rel=".">
+                                Comentarios
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="enlacesPieDePagina">
+                <div class="contenedorEnlaces">
+                    <h3><a href="./sobreNosotrxs.html" id="enlacesFooter">Sobre Nosotres</a></h3>
+                    <h3><a href="./catalogo.html" id="enlacesFooter">Catálogo</a></h3>
+                    <h3><a href="./inicio.html" id="enlacesFooter">Inicio</a></h3>
+                </div>
+                <div class="contenedorEnlaces">
+                    <h3><a href="./inicioDeSesion.html" id="enlacesFooter">Iniciar Sesión</a></h3>
+                    <h3><a href="./carrito.html" id="enlacesFooter">Mi carrito</a></h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="../scripst/inicio_de_sesión.js"></script>
+
+</body>
+
+</html>
