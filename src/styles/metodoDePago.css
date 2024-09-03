@@ -84,7 +84,10 @@ body {
 .formularioDetallesPago a{
     color: blue;
 }
-
+input.error {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #ffe6e6; /* Fondo de color rojo claro para mayor visibilidad */
+}
 @media screen and (max-width: 765px) {
     .contenedorMetodoDePago {
         display: flex;

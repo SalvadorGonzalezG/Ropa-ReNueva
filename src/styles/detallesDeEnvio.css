@@ -60,11 +60,35 @@ body{
   /*flex-grow: 0;  Para que el input ocupe el resto del espacio disponible */
   border-radius: 10px;
 }
+.formularioDetallesEnvio .mb-1 select {
+  background-color: #F9F8DF;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid #000000; /* Asegúrate de que el borde sea consistente */
+  padding: 5px; /* Añade un poco de espacio interno */
+}
+
+.formularioDetallesEnvio .mb-1 select:focus {
+  background-color: #ffffff;
+  outline: none; /* Quita el borde por defecto del enfoque */
+  border-color: #0a8d08; /* Cambia el color del borde al enfocar si lo deseas */
+  box-shadow: 0 0 5px rgba(178, 97, 97, 0.1); /* Agrega una sombra  */
+}
 .botonDetallesEnvio{
   background-color: #E2793C;
   color: white;
   border-radius: 20px;
   border: none;
+}
+.form-select {
+  background-color: #F9F8DF;
+  width: 70%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.formularioDetallesEnvio .mb-1 select.error {
+  border: 2px solid red; /* Resalta el campo con un borde rojo */
 }
 .inputCupon{
   display: none;
